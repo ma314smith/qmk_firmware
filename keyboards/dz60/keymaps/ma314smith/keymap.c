@@ -75,9 +75,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Numpad
  * ,--------------------------------------------------------------------------------------------.
- * |   `    |     |     |     |     |     |     |     |     |     |     |     |     |Ctl+Alt+Del|
+ * |   `    |     |     |     |     |     |     |     |     |     |     |     |     |           |
  * |--------------------------------------------------------------------------------------------+
- * |           | MUTE |VOLD |VOLU|     |     |     |  7  |  8  |  9  |     |     |     |        |
+ * |           | MUTE |VOLD |VOLU|     |     |     |  7  |  8  |  9  |     |     |    |CtlAltDel|
  * |--------------------------------------------------------------------------------------------+
  * |            |PREV |PLAY |NEXT |     |     |     |  4  |  5  |  6  |     |     |             |
  * |--------------------------------------------------------------------------------------------+
@@ -88,8 +88,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 
   KEYMAP(
-		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, LCTL(LALT(KC_DEL)), 
-		KC_TRNS, KC_MUTE, KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_7,    KC_8,    KC_9,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
+		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
+		KC_TRNS, KC_MUTE, KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_7,    KC_8,    KC_9,    KC_TRNS, KC_TRNS, KC_TRNS, LCTL(LALT(KC_DEL)), 
 		KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS, KC_TRNS, KC_TRNS, KC_4,    KC_5,    KC_6,    KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_1,    KC_2,    KC_3,    KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_0,    KC_DOT,  KC_TRNS, KC_TRNS, MO(4), KC_TRNS),
