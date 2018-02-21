@@ -36,6 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 #define MATRIX_COLS 8
 
+#define PREVENT_STUCK_MODIFIERS
 #define TAPPING_TERM    200
 
 /* number of backlight levels */
