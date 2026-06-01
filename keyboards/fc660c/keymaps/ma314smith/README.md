@@ -1,9 +1,14 @@
 # ma314smith — FC660C keymap
 
 OS-aware keymap (Windows + macOS) for the Leopold FC660C on the Hasu alt
-controller. Caps Lock acts as the macOS Globe/fn key (Left Ctrl on Windows),
-FN-layer Home/End map to Cmd+←/→ on macOS, and GUI/Alt auto-swap into the
-standard Mac Option/Command positions — all driven by QMK OS detection.
+controller, driven by QMK OS detection:
+
+- **Caps Lock** — Cmd (⌘, Left GUI) on macOS, Left Ctrl on Windows.
+- **Bottom-right key** (left of the arrow cluster) — Globe/fn (🌐) on macOS,
+  momentary FN layer on Windows (there's no Windows Globe; the firmware-local
+  Fn layer is its natural counterpart).
+- **FN-layer Home/End** — Cmd+←/→ on macOS, Home/End on Windows.
+- **GUI/Alt** auto-swap into the standard Mac Option/Command positions on macOS.
 
 ## Compile
 
@@ -13,11 +18,9 @@ qmk compile -kb fc660c -km ma314smith
 
 ## Flash
 
-1. Put the Hasu controller into the **Atmel DFU bootloader** (see
-   `keyboards/fc660c/readme.md`). Either:
-   - **Physical:** press the reset/boot button on the controller (usually on the
-     back of the board; on HHKB controllers this replaces the original DIP switches).
-   - **Software:** use the QMK Command combo **Left Shift + Right Shift + Fn + P (Pause)**.
+1. Put the Hasu controller into the **Atmel DFU bootloader**: press the reset/boot
+   button on the controller (usually on the back of the board; on HHKB controllers
+   this replaces the original DIP switches). See `keyboards/fc660c/readme.md`.
 2. Run:
    ```
    qmk flash -kb fc660c -km ma314smith
